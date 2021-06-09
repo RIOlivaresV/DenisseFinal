@@ -1,0 +1,1396 @@
+/*
+|------------------------------------------
+|  Global
+|------------------------------------------
+*/
+body {
+  font-family: "Raleway", sans-serif;
+  color: #ffff;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.65;
+  background: black;
+  align-content: center;
+  max-width: 100%;
+}
+
+.bg-centre {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.container {
+  padding: 0 15px;
+}
+
+.is-relative {
+  position: relative;
+}
+.theme-wrap {
+  background-color: #000;
+}
+
+/*
+|------------------------------------------
+|  Header
+|------------------------------------------
+*/
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  text-align: left;
+  padding-left: 2%;
+  display: flex;
+}
+
+/*
+|------------------------------------------
+|  Navigation
+|------------------------------------------
+*/
+.navbar {
+  display: none;
+  width: 40vh;
+  position: absolute;
+  font-size: 25px;
+  background-color: #ffff;
+  box-shadow: 0px 8px 16px 0px rgba(248, 244, 244, 0.699);
+  z-index: 1;
+}
+
+.navbar:hover {
+  display: block;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  padding: 20%;
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #000;
+  color: #ffff00;
+}
+
+.title {
+  text-align: center;
+  width: 94%;
+}
+
+.menu:hover .navbar {
+  display: block;
+}
+
+.menu {
+  width: 5%;
+}
+
+.gn {
+  display: none;
+}
+
+/*
+|------------------------------------------
+|  DENOISE DENOISE DENOISE DENOISE DENOISE
+DENOISE DENOISE DENOISE DENOISE DENOISE DENOISE
+|------------------------------------------
+*/
+/*
+|------------------------------------------
+|  Banner
+|------------------------------------------
+*/
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+.hello img {
+  width: 100%;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 35px;
+  padding: 5%;
+  font-weight: 100;
+  text-align: right;
+}
+.banner .content {
+  margin-top: 5%;
+}
+
+.banner h2 {
+  color: #ffff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.banner .content p {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 25px;
+  color: #ffff;
+}
+/*
+|------------------------------------------
+Flip-cards
+|------------------------------------------/*
+*/
+
+.flip-card {
+  background-color: transparent;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 2%;
+  
+}
+
+.design-thinking .flip-card {
+  background-color: transparent;
+  display: flex;
+  width: 400px;
+  height: 150px;
+  perspective: 1000px;
+  margin: 2%;
+}
+
+.flip-card-front img {
+  width: 400px;
+  height: 400px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffff;
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.flip-card-back {
+  background-color: #000;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transform: rotateY(180deg);
+  padding: 25%;
+}
+
+.design-thinking .flip-card-back {
+  background-color: #000;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transform: rotateY(180deg);
+  padding: 0%;
+}
+.flip-card-back p {
+  padding-top: 5%;
+}
+
+/*
+.credentials {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+/*
+|------------------------------------------
+Footer
+|------------------------------------------
+*/
+.footer-container {
+  display: inline-flex;
+  grid-template-columns: auto auto;
+  margin: 1% 1%;
+  border-style: solid none none none;
+  border-color: #fff;
+  border-width: 1px;
+}
+
+.footer-center {
+  width: 30%;
+  text-align: center;
+  margin: 0.5% 0% 0% 0%;
+}
+
+.icons {
+  max-width: 7%;
+  margin: 3% 1%;
+}
+
+.networking {
+  padding-left: 5%;
+  width: 50%;
+}
+
+.networking img {
+  margin: 1%;
+}
+
+.contact {
+  width: 50%;
+  background-color: #000;
+  padding-right: 5%;
+}
+
+.contact img {
+  margin: 1%;
+  float: right;
+}
+
+
+/*
+|------------------------------------------
+| WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK
+WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK 
+WORK WORK WORK WORK WORK WORK WORK WORK WORK
+|------------------------------------------
+*/
+.work img {
+  width: 100%;
+}
+.design-thinking {
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 5%;
+  width: 100%;
+  justify-self: center;
+}
+h1 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.overflow {
+  background: #ffff;
+  height: 400px;
+  margin: 0 auto;
+  overflow: scroll;
+  overflow-y: scroll;
+  max-width: 90%;
+}
+.images-overflow {
+  width: auto;
+  padding: 2%;
+  display: flex;
+  position: relative;
+  background-color: #000;
+}
+
+.images-overflow div {
+  text-align: center;
+}
+
+.images-overflow img {
+  width: 80%;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffff;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.overflow h3 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 2%;
+}
+.overflow p {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin: auto 20%;
+}
+/*
+|------------------------------------------
+ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT 
+ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+|------------------------------------------
+*/
+.banner-about h1 {
+  font-size: 45px;
+  font-weight: 100;
+  color: #ffff;
+  text-align: start;
+  padding-left: 3%;
+}
+.banner-about h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 2% auto;
+}
+.description h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 5% 2% 5% 5%;
+}
+.about img {
+  width: 100%;
+}
+.about-banner {
+  display: flex;
+}
+.about-images {
+  max-width: 100%;
+}
+
+.description {
+  /* max-width: 50%; */
+}
+.description p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffff;
+  margin: 3% 5%;
+}
+.about-grid div {
+  text-align: center;
+  font-size: 20px;
+}
+.about-grid .flip-card-back {
+  padding: 18%;
+}
+
+.grid-img {
+  margin: 2%;
+
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
+.about-grid p {
+  font-size: 18px;
+}
+
+.overflow-experience li {
+  font-size: 25px;
+  color: #000;
+  margin: 1% 2%;
+  border: 1px solid #000;
+}
+/* .overflow-experience h4 {
+  font-size: 25px;
+  color: #000;
+  margin: 1% 2%;
+  text-align: center;
+} */
+/*
+|------------------------------------------
+CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+|------------------------------------------
+*/
+
+.banner-contact img{
+  width: 100%;
+}
+.contact-me h1 {
+  color: #ffff;
+  font-size: 35px;
+  font-weight: 300;
+  margin: 2% 5%;
+  text-align: center;
+}
+.contact-me h2 {
+  color: #ffff;
+  font-size: 25px;
+  font-weight: 100;
+  margin: auto 5%;
+  text-align: left;
+  padding-top: 20%;
+
+}
+
+.contact-me p {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 300;
+  margin: auto 5%;
+  text-align: left;
+  max-width: 50%;
+}
+.display-contact img {
+    max-width: 30%;
+}
+.display-contact .btn {
+    transition: all .3s ease;
+    background: white;
+    color: #000;
+    border-radius: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding-top: 1%;
+    margin: 15% 30% 0% 30%;
+    height: 8%;
+    font-size: 25px;
+    justify-content: center;
+  }
+.display-contact .btn:hover {
+    background: #000;
+    color: #ffff;
+    border-color: #ffff;
+}
+
+/*
+|------------------------------------------
+|------------------------------------------
+|------------------------------------------
+|  Media Queries
+|------------------------------------------
+*/
+
+@media(min-width: 320px) { 
+
+/* HEADER*/
+  header {
+    max-width: 100%;
+  }
+  .menu {
+    width: 15%;
+  }
+  .logo-den {
+      width: 150px;
+  }
+  .navbar {
+    font-size: 20px;
+    width: 20vh;
+    text-align: center;
+  }
+/* MAIN */
+  .hello img {
+    width: 100%;
+  }
+  .credentials {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 1%;
+    width: 100%;
+    align-items: center;
+  }
+  .credentials .flip-card {
+    width: 300px;
+    height: 300px;
+  }
+  .flip-card img {
+    width: 300px;
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 16px;
+    text-align: center;
+    padding: 6% 10%;
+  }
+  .banner h2 {
+    font-size: 15px;
+    padding-bottom: 0%;
+  }
+  .banner .content p {
+    padding-bottom: 7%;
+    font-size: 15px;
+  }
+/* FOOTER */
+  .footer-container {
+    width: 100%;
+    padding-top: 5%;
+  }
+  .icons {
+    max-width: 25%;
+    padding: 0 1%;
+    vertical-align: top;
+  }
+  .footer-center {
+    width: 90%;
+  }
+  .footer-center p {
+    font-size: 8px;
+  }
+/*----------------------ABOUT/*/
+  .banner-about h1{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 5%;
+    padding-left: 2%;
+  }
+  .description p {
+    font-size: 13px;
+    padding-left: 10%;
+    width: 80%;  
+  }
+  .description h2 {
+    font-size: 13px;
+    color: #000;
+    font-weight: 300;
+    background-color: #ffff;
+    padding-bottom: 0%;
+  }
+  .about-grid {
+    padding-top: 2%;
+    grid-template-columns: auto;
+    mix-blend-mode: luminosity;
+  }
+  .grid-img img {
+    width: 300px;
+  }
+  .about img {
+    width: 100%;
+    padding-left: 0%
+  }
+  .about-grid .flip-card {
+    width: 300px;
+    height: 200px;
+    vertical-align: middle;
+  }
+  .about-grid .flip-card h3 {
+    padding-top: 10%;
+    font-size: 20px;
+  }
+  .about-grid .flip-card p {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    padding: 0%;
+  }
+  .about-grid .flip-card-back p {
+    font-size: 12px;
+    color: #ffff;
+    padding-top: 0%;
+  }
+
+/*----------------------WORK/*/
+  .banner-work h1{
+    color: #ffff;
+    font-weight: 300;
+    padding-top: 3%;
+    margin: 0 3%;
+    font-size: 14px;
+  }
+  .design-thinking .flip-card-front {
+    padding-top: 6%;
+  }
+  .design-thinking .flip-card-front p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .banner-work h2 {
+    padding-left: 5%;
+    text-align:center;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .design-thinking .flip-card {
+    height: 80px;
+    width: 90%;
+  }
+  .design-thinking .flip-card-back p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .overflow h3 {
+    font-size: 13px;
+    text-align: center;
+  }
+  .overflow p{
+    font-size: 12px;
+    margin: 2% 3%;
+  }
+  .images-overflow {
+    width: auto;
+    padding: 2%;
+    display: block;
+    position: inherit;
+    background-color: #ffff;
+  }
+   .design-thinking {
+    display: inline;
+    position: relative;
+    left: 3%;
+  }
+  /*----------------------CONTACT/*/
+  .display-contact {
+    display: inline-grid;
+  }
+  .display-contact .btn {
+    margin: 10%;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    padding: 0% 5% 0% 5%;
+    font-size: 10px;
+  }
+  .display-contact img{
+    float: right;
+    margin: 0% 5% 0% 5%;
+  }
+  .contact-me h1 {
+    color: #ffff;
+    font-size: 13px;
+    font-weight: 300;
+    margin: auto 15%;
+    text-align: left;
+    padding: 2% 0;
+  }
+  .contact-me h2 {
+    color: #ffff;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 0 5%;
+    text-align: left;
+    padding-top: 5%;
+    width: 90%;
+
+  }
+  .quot {
+    padding-left: 5%
+  }
+
+  .contact-me p {
+    color: #ffff;
+    font-size: 13px;
+    font-weight: 300;
+    margin: auto 5%;
+    text-align: left;
+    max-width: 90%;
+  }
+}
+/*
++
++
++
++
+*/
+
+@media(min-width: 576px) { 
+/* HEADER*/
+
+  .menu {
+    width: 12%;
+  }
+  .hello img {
+    width: 100%;
+  }
+  .logo-den {
+    width: 220px;
+  }
+  
+/* MAIN */
+  .credentials {
+    display: inline-flex;
+    padding: 0 15%;
+  }  
+  .credentials .flip-card {
+    width: 400px;
+    height: 400px;
+  }
+  .flip-card img {
+    width: 400px;
+    height: 400px;
+  }
+  .banner h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .banner h2 {
+    font-size: 30px;
+  }
+  .banner .content p {
+    padding-bottom: 7%;
+    font-size: 20px;
+  }
+
+/* FOOTER */
+  .icons {
+    max-width: 25%;
+    padding:0 2%;
+  }
+  .footer-center p {
+    font-size: 13px;
+  }
+/*----------------------ABOUT/*/
+  .banner-about h1{
+    text-align: center;
+    font-size: 20px;
+    padding-left: 0%;
+  }
+  .description p {
+    font-size: 15px;
+  }
+  .description h2 {
+    font-size: 20px;
+  }
+  .grid-img img {
+    width: 400px;
+  }
+  
+  .about-grid .flip-card {
+    width: 400px;
+    height: 250px;
+  }
+  .about-grid .flip-card h3 {
+    padding-top: 10%;
+    font-size: 28px;
+  }
+  .about-grid .flip-card p {
+    font-size: 28px;
+  }
+  .about-grid .flip-card-back p {
+    font-size: 15px;
+  }
+/*----------------------WORK/*/
+  .banner-work h1{
+    font-size: 15px;
+  }
+  .banner-work h2 {
+    font-size: 20px;
+  }
+  .overflow h3 {
+    font-size: 16px;
+  }
+  .overflow p{
+    font-size: 13px;
+  }
+  /*----------------------CONTACT/*/
+  .display-contact .btn {
+    height: 35px;
+    display: flex;
+    padding: 1% 3%;
+    font-size: 15px;
+    margin: 15%;
+ 
+  }
+  .display-contact img{
+    float: right;
+    margin: 0% 5% 0% 5%;
+  }
+  .contact-me h1 {
+    font-size: 20px;
+    margin: auto 20%;
+    padding: 3% 0;
+  }
+  .contact-me h2 {
+    font-size: 15px;
+  }
+
+  .contact-me p {
+    text-align: right;
+  }
+}
+/*
++
++
++
++
+*/
+@media(min-width: 768px) {
+ /* HEADER*/
+  .icons {
+    max-width: 10%;
+  }
+  .menu {
+    width: 7%;
+  }
+  .logo-den {
+    width: 200px;
+  }
+  .navbar {
+    font-size: 20px;
+    width: 20vh;
+    text-align: center;
+  }
+/* MAIN */
+  .credentials {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: auto auto;
+  }  
+  .flip-card {
+    width: 400px;
+    height: 400px;
+    margin: 2%;
+    color: #000;
+  }
+  .banner h1 {
+    font-size: 20px;
+  }
+  .banner h2 {
+    font-size: 25px;
+    padding-bottom: 0%;
+  }
+  .banner .content p {
+    padding-bottom: 7%;
+    font-size: 20px;
+  }
+
+/* FOOTER */
+  .footer-container {
+    padding-top: 5px;
+  }
+  .footer-center {
+    width: 40%;
+  }
+  .icons {
+    max-width: 15%;
+  }
+/*----------------------ABOUT/*/
+  .banner-about h1{
+    font-size: 28px;
+    padding-left: 10%;
+  }
+  .description p {
+    font-size: 25px;
+  }
+  .description h2 {
+    font-size: 25px;
+  }
+  .about-grid {
+    grid-template-columns: auto auto;
+    mix-blend-mode: luminosity;
+  }
+  .grid-img img {
+    width: 300px;
+  }
+
+  .about-grid .flip-card {
+    width: 300px;
+    height: 300px;
+  }
+  .about-grid .flip-card h3 {
+    padding-top: 10%;
+    font-size: 30px;
+  }
+  .about-grid .flip-card p {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    padding: 0%;
+  }
+  .about-grid .flip-card-back p {
+    font-size: 15px;
+  }
+/*----------------------WORK/*/
+  .banner-work h1{
+    font-size: 20px;
+  }
+  .design-thinking {
+    left: 0%;
+  }
+  .design-thinking .flip-card-front {
+    padding-top: 25%;
+  }
+  .design-thinking .flip-card-front p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .banner-work h2 {
+    text-align:left;
+  }
+  .design-thinking .flip-card {
+    height: 100px;
+  }
+  .overflow h3 {
+    font-size: 20px;
+  }
+  .overflow p{
+    font-size: 15px;
+    margin: 2% 10%;
+  }
+  .images-overflow {
+    width: auto;
+    padding: 2%;
+    display: flex;
+    position: relative;
+    background-color: #000;
+  }
+  .design-thinking {
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+  /*----------------------CONTACT/*/
+  .display-contact {
+    display: flex;
+  }
+  .display-contact .btn {
+    margin: 30% 45%;
+    height: 35px;
+    display: flex;
+    position: absolute;
+    padding: 1% 3%;
+    font-size: 15px;
+  }
+  .contact-elements {
+    display: contents;
+  }
+  .display-contact img{
+    float: right;
+    margin-right: 5%;
+  }
+  .contact-me h1 {
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+    margin: auto 2%;
+    text-align: center;
+    padding: 2% 0;
+  }
+  .contact-me h2 {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0 5%;
+    text-align: left;
+    padding-top: 2%;
+    width: 60%;
+  }
+  .contact-me p {
+    max-width: 50%;
+  }
+}
+/*
++
++
++
++
+*/
+
+@media(min-width: 992px) {
+/* HEADER*/
+  .menu {
+    width: 8%;
+  }
+  .logo-den {
+    width: 300px;
+  }
+/* MAIN */
+  .banner h1 {
+    font-size: 25px;
+  }
+  .banner .content p {
+    padding-bottom: 7%;
+  }
+  .flip-card-back {
+    font-size: 25px;
+  }
+/* FOOTER*/
+   .icons {
+    max-width: 12%;
+  }
+/*----------------------ABOUT/*/
+  .banner-about h1{
+    font-size: 35px;
+    padding-top: 5%;
+    padding-left: 10%;
+    text-align: left;
+  }
+  .description p {
+    font-size: 30px; 
+  }
+  .description h2 {
+    font-size: 30px;
+  }
+  .about-grid {
+    grid-template-columns: auto auto auto;
+    mix-blend-mode: lighten;
+  }
+  .grid-img img {
+    width: 300px;
+  }
+  .about img {
+    width: 100%;
+    padding-left: 0%
+  }
+  .about-grid .flip-card {
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+  }
+  .about-grid .flip-card h3 {
+    padding-top: 10%;
+    font-size: 30px;
+  }
+  .about-grid .flip-card p {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    padding: 0%;
+  }
+  .about-grid .flip-card-back p {
+    font-size: 15px;
+    color: #ffff;
+    padding-top: 0%;
+  }
+/*----------------------WORK/*/
+  .banner-work h1{
+    font-size: 25px;
+  }
+  .design-thinking .flip-card-front p {
+    font-size: 23px;
+  }
+  .banner-work h2 {
+    font-size: 25px;
+  }
+  .overflow h3 {
+    font-size: 25px;
+  }
+  .overflow p{
+    margin: 2% 15%;
+    font-size: 15px;
+  }
+  .images-overflow div {
+    text-align: center;
+    width: 100%
+  }
+/*----------------------CONTACT/*/
+  .display-contact {
+    display: flex;
+  }
+  .display-contact .btn {
+    margin: 25% 40%;
+    height: 35px;
+    display: flex;
+    position: absolute;
+    padding: 1% 3%;
+    font-size: 15px;
+  }
+  .contact-elements {
+    display: contents;
+  }
+  .display-contact img{
+    float: right;
+    margin-right: 5%;
+  }
+  .contact-me h1 {
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 300;
+    margin: auto 2%;
+    text-align: center;
+    padding: 2% 0;
+  }
+  .contact-me h2 {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 5%;
+    text-align: left;
+    padding-top: 2%;
+    width: 60%;
+
+  }
+  .quot {
+    padding-left: 5%
+  }
+  .contact-me p {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 300;
+    margin: auto 5%;
+    text-align: left;
+    max-width: 50%;
+  }
+}
+/*
++
++
++
++
+*/
+@media (min-width: 1200px) {
+/* HEADER*/
+
+  .menu {
+    margin-top: 15px;
+  }
+  .logo-den {
+    width: 270px;
+    padding-top: 20px;
+    position: relative;
+  }
+  .navbar {
+    font-size: 35px;
+    width: 35vh;
+  }
+  .title {
+    width: 0%;
+  }
+/* MAIN*/
+  .banner h1 {
+    font-size: 30px;
+    text-align: right;
+  }
+  .banner h2 {
+    font-size: 35px;
+    padding-bottom: 0%;
+  }
+  .banner .content p {
+    font-size: 30px;
+    padding-bottom: 5%;
+  }
+  .credentials {
+    grid-template-columns: auto auto auto;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  .flip-card-back {
+    font-size: 30px;
+  }
+/* FOOTER*/
+  .footer-container {
+    padding-top: 10px;
+  }
+  .icons {
+    max-width: 12%;
+  }
+  .footer-center p {
+    font-size: 18px;
+  }
+/*----------------------ABOUT/*/
+
+  .about-grid {
+    padding-top: 2%;
+  }
+  .grid-img img {
+    width: 390px;
+  
+  }
+  .about-grid .flip-card {
+    width: 390px;
+    height: 390px;
+  }
+  .about-grid .flip-card h3 {
+    padding-top: 20%;
+    font-size: 35px;
+  }
+  .about-grid .flip-card-back p {
+    font-size: 20px;
+    padding-top: 5%;
+  }
+
+/*----------------------WORK/*/
+  .banner-work h1{
+    font-size: 30px;
+  }
+  .banner-work h2 {
+    padding-left: 5%;
+    text-align:left;
+    font-weight: 600;
+  }
+  .design-thinking .flip-card {
+    height: 115px;
+  }
+  .design-thinking .flip-card-back p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .banner-work h2{
+    font-size: 30px;
+  }
+  .overflow h3{
+    font-size: 30px;
+  }
+  .overflow p{
+    font-size: 25px;
+  }
+/*----------------------CONTACT/*/
+.display-contact {
+  display: table-cell;
+}
+.display-contact .btn {
+    position: inherit;
+    justify-content: center;
+    margin: auto;
+    padding: 4% 5%;
+    font-size: 30px;
+    padding-top: 0%;
+}
+.contact-elements {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.display-contact img{
+  margin-right: 10%;
+}
+.contact-me h1 {
+  font-size: 30px;
+  margin: auto 10%;
+}
+.contact-me h2 {
+  font-size: 25px;
+  width: 60%;
+}
+.contact-me p {
+  font-size: 20px;
+}
+.design-thinking .flip-card-front p {
+  font-size: 30px;
+}
+/*
++
++
++
++
+*/
+@media(min-width: 1900px) {
+/* HEADER*/
+  
+  .menu {
+    width: 10%;
+  }
+  .logo-den {
+    width: 400px;
+    margin-top: 30px;
+  }
+  .navbar {
+    font-size: 40px;
+    width: 30vh;
+  }
+/* MAIN*/
+  .banner h1 {
+    font-size: 45px;
+  }
+  .banner h2 {
+    font-size: 40px;
+    padding-bottom: 0%;
+  }
+  .banner .content p {
+    font-size: 40px;
+  }
+
+  .credentials {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding-bottom: 5%;
+  }
+
+/* FOOTER*/
+  .footer-center p {
+    font-size: 25px;
+  }
+  .networking img {
+    min-width: 9%;
+    margin: 3%;
+  }
+  .contact img {
+    min-width: 10%;
+    margin: 2%;
+  }
+   .footer-container {
+    padding-top: 8px;
+    width: 100%;
+  }
+/*----------------------ABOUT/*/
+  .banner-about h1{
+    text-align: left;
+    padding-top: 3%;
+    padding-left: 15%;
+    font-size: 45px;
+  }
+  .description p {
+    font-size: 35px;
+    padding-left: 40%;  
+  }
+  .description h2 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .grid-img img {
+    width: 500px;
+  }
+  .about img {
+    padding-left: 2%
+  }
+  .about-grid .flip-card {
+    width: 500px;
+    height: 500px;
+  }
+  .about-grid .flip-card p {
+    color: #000;
+    font-size: 25px;
+  }
+  .about-grid .flip-card-back p {
+    font-size: 22px;
+    color: #ffff;
+  }
+/*----------------------WORK/*/
+  .banner-work h1{
+    font-size: 45px;
+    padding-top: 2%;
+  }
+  .overflow p{
+    font-size: 30px;
+  }
+  .design-thinking .flip-card-back p {
+    font-size: 25px;
+  }
+/*----------------------CONTACT/*/
+  .display-contact .btn {  
+    padding-top: 1%;
+    font-size: 35px;
+  }
+.contact-me h1 {
+  font-size: 40px;
+  padding: 5% 0;
+  }
+.contact-me h2 {
+  font-size: 35px;
+  margin: auto 5%;
+  padding-top: 5%;
+  }
+
+.contact-me p {
+  font-size: 25px;
+  }
+}
